@@ -33,6 +33,7 @@ const signup = async (req,res)=>{
 
 
 
+
 const login = async (req,res)=>{
     try{
         const {name , email, password} = req.body;
@@ -55,7 +56,7 @@ const login = async (req,res)=>{
 
         
         res.status(200).json({message: "login succesfully", user});
-        
+
     }
     catch(err){
         console.log(err);
